@@ -12,6 +12,7 @@ Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{module}
 Source:		%{module}-%{version}.tar.bz2
 BuildArch:	noarch
+BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 %description
 File::Next is a lightweight, taint-safe file-finding module. It's lightweight
