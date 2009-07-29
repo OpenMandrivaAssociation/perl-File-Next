@@ -1,25 +1,25 @@
-%define module	File-Next
-%define name	perl-%{module}
-%define version 1.02
-%define	release %mkrel 3
+%define upstream_name	 File-Next
+%define upstream_version 1.02
 
-Name:		%{name}
-Version:	%{version}
-Release:	%{release}
+Name:       perl-%{upstream_name}
+Version:    %perl_convert_version %{upstream_version}
+Release:    %mkrel 1
+
 Summary:	File-finding iterator
-License:	GPL or Artistic
+License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{module}
-Source:		%{module}-%{version}.tar.bz2
+Url:		http://search.cpan.org/dist/%{upstream_name}
+Source0:	http://www.cpan.org/modules/by-module/File/%{upstream_name}-%{upstream_version}.tar.bz2
+
 BuildArch:	noarch
-BuildRoot:	%{_tmppath}/%{name}-%{version}
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 File::Next is a lightweight, taint-safe file-finding module. It's lightweight
 and has no non-core prerequisites.
 
 %prep
-%setup -q -n %{module}-%{version}
+%setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
@@ -40,6 +40,3 @@ rm -rf %{buildroot}
 %doc Changes
 %{perl_vendorlib}/File
 %{_mandir}/*/*
-
-
-
