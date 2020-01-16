@@ -1,9 +1,9 @@
 %define upstream_name	 File-Next
-%define upstream_version 1.12
+%define upstream_version 1.18
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	3
+Release:	1
 
 Summary:	File-finding iterator
 License:	GPL+ or Artistic
@@ -23,17 +23,12 @@ and has no non-core prerequisites.
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
-%make
-
-%check
-make test 
+%make_build
 
 %install
-%makeinstall_std
+%make_install
 
 %files
 %doc Changes
 %{perl_vendorlib}/File
 %{_mandir}/*/*
-
-
