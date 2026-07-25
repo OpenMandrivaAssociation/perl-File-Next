@@ -2,14 +2,14 @@
 %define upstream_version 1.18
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	1
+Version:	%{upstream_version}
+Release:	2
 
 Summary:	File-finding iterator
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/File/%{upstream_name}-%{upstream_version}.tar.gz
+Url:		https://github.com/petdance/file-next/tree/master
+Source0:	https://cpan.metacpan.org/authors/id/P/PE/PETDANCE/File-Next-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
