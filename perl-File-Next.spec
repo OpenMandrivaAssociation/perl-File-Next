@@ -3,7 +3,7 @@
 
 Name:		perl-%{upstream_name}
 Version:	1.18
-Release:	2
+Release:	3
 
 Summary:	File-finding iterator
 License:	GPL+ or Artistic
