@@ -3,13 +3,13 @@
 
 Name:		perl-%{upstream_name}
 Version:	%{upstream_version}
-Release:	2
+Release:	1
 
 Summary:	File-finding iterator
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://github.com/petdance/file-next/tree/master
-Source0:	https://cpan.metacpan.org/authors/id/P/PE/PETDANCE/File-Next-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/P/PE/PETDANCE/File-Next-1.18.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
