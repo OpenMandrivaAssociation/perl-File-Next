@@ -2,8 +2,8 @@
 %define upstream_version 1.18
 
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	1
+Version:	1.18
+Release:	2
 
 Summary:	File-finding iterator
 License:	GPL+ or Artistic
@@ -20,7 +20,7 @@ File::Next is a lightweight, taint-safe file-finding module. It's lightweight
 and has no non-core prerequisites.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n File-Next-1.18
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
